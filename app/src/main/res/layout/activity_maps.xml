@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.vova.photograbber.MapsActivity" />
+
+    <android.support.v4.widget.ContentLoadingProgressBar
+        android:id="@+id/image_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        style="?android:attr/progressBarStyleLargeInverse"
+        />
+
+
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/fabMyPos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fabAdd"
+        android:layout_alignStart="@+id/fabAdd"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/ic_my_location_black_24dp"
+        fab:fab_colorNormal="@color/common_google_signin_btn_text_dark_default"
+        fab:fab_colorPressed="@color/common_google_signin_btn_text_dark_default"
+        fab:fab_colorRipple="@color/common_google_signin_btn_text_dark_disabled" />
+
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/fabAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/fab_add"
+        fab:fab_colorNormal="#00c853"
+        fab:fab_colorPressed="@color/colorPrimary"
+        fab:fab_colorRipple="@color/common_google_signin_btn_text_dark_disabled" />
+
+
+</RelativeLayout>
