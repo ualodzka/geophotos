@@ -1,4 +1,4 @@
-package dzolla.photograbber2;
+package dzolla.geophotos;
 
 import org.junit.Test;
 

@@ -1,6 +1,6 @@
-package dzolla.photograbber2;
+package dzolla.geophotos;
 
-import dzolla.photograbber2.pojos.RESTresponse;
+import dzolla.geophotos.pojos.RESTresponse;
 import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Query;

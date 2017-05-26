@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="dzolla.photograbber2">
+    package="dzolla.geophotos">
 
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
@@ -31,7 +31,7 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".MapsActivity"
+            android:name="dzolla.geophotos.MapsActivity"
             android:label="@string/title_activity_maps"
             android:screenOrientation="portrait"
             >
